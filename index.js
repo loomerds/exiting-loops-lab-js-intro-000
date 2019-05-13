@@ -21,5 +21,11 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  console.log(findFn(array[0]));
+  for(let i=0; i<array.length; i++) {
+    let result = findFn(array[i]);
+    if(result !== null) {
+      return result;
+    }
+  }
+  return null;
 }
