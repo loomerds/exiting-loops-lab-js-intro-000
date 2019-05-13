@@ -21,5 +21,5 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  console.log(findFn);
+  console.log(findFn());
 }
